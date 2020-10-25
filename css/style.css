@@ -1,0 +1,71 @@
+.box-1 {
+	width: 890px;
+	height: 300px; 
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	z-index: 1;
+	opacity: 70%;
+
+	animation: alien;
+	animation-duration: 2.5s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes alien {
+	0% {
+		filter: blur(60px);
+	}
+
+	100% {
+		filter: blur(0);
+	}
+}
+
+
+
+.box-2 {
+	position: absolute;
+	top: 0%;
+	left: 26%;
+	width: 756px;
+	transform: translate(17%, 5%);
+
+	animation-name: floor;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes floor {
+	0% {
+		filter: blur(80px);
+	}
+	100% {
+		filter: blur(0);
+	}
+}
+
+.smoke {
+	animation-name: smoke;
+	animation-duration: 3s;
+	z-index: 1;
+	position: absolute;
+	transform: translate(28%, 67%);
+	opacity: 22%;
+
+
+}
+
+@-webkit-keyframes smoke {
+	0% {
+		filter: blur(30px);
+	}
+	100% {
+		filter: blur(0);
+	}
+}
+
+
